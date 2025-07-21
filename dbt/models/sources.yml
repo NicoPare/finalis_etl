@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: UNRATE
+      - name: BAMLCC0A0CMTRIV
+      - name: BAMLHYH0A0HYM2TRIV
+      - name: NASDAQ100
+      - name: SP500
+      - name: WILLMICROCAPPR
+      - name: DFF
+      - name: CPALTT01USM659N
+      - name: VIXCLS

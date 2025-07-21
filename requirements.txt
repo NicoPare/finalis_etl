@@ -1,0 +1,8 @@
+requests
+duckdb==0.10.0
+click
+python-dotenv
+dbt-core==1.7.13
+dbt-duckdb==1.7.2
+pandas==2.2.2
+numpy==1.24.4

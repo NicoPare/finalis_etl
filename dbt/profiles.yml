@@ -1,0 +1,7 @@
+federal_reserve:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: ../federal_reserve.duckdb  
+      schema: main                     

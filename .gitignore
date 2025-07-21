@@ -1,0 +1,14 @@
+.venv/
+
+.env
+
+*.duckdb
+
+__pycache__/
+*.pyc
+
+*.db
+
+# outputs
+raw_data/
+reports/

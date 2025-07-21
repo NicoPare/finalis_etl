@@ -1,0 +1,11 @@
+[
+  { "series_id": "UNRATE", "description": "Unemployment Rate" },
+  { "series_id": "BAMLCC0A0CMTRIV", "description": "ICE BofA US Corp Master TR" },
+  { "series_id": "BAMLHYH0A0HYM2TRIV", "description": "ICE BofA US High Yield TR" },
+  { "series_id": "NASDAQ100", "description": "NASDAQ 100 Index" },
+  { "series_id": "SP500", "description": "S&P 500 Index" },
+  { "series_id": "WILLMICROCAPPR", "description": "Wilshire Micro-Cap Index" },
+  { "series_id": "DFF", "description": "Federal Funds Effective Rate" },
+  { "series_id": "CPALTT01USM659N", "description": "Consumer Price Index (OECD)" },
+  { "series_id": "VIXCLS", "description": "CBOE Volatility Index (VIX)" }
+]
