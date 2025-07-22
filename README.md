@@ -76,4 +76,6 @@ This executes, in order:
 
 The final report is stored in `reports/YYYYMMDD/federal_reserve_report_dataset_{timestamp}.csv`
 
+**Note**: I added an example report in `../test_report folder` to have an example, but after the execution of the pipeline a new report object will be generated with the refreshed data.
+
 ---
