@@ -1,7 +1,6 @@
-federal_reserve:
+default:
   target: dev
   outputs:
     dev:
       type: duckdb
-      path: ../federal_reserve.duckdb  
-      schema: main                     
+      path: "{{ env_var('DUCKDB_PATH') }}"

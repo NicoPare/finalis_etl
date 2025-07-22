@@ -32,6 +32,8 @@ def load_series_to_duckdb(series_id, conn, batch_loaded_at):
 
         observations = raw_data.get("observations", [])
         for obs in observations:
+            if obs.get("value") in (".", None):
+                continue  # Skip missing or invalid values
             row = {
                 "series_id": series_id,
                 "date": obs["date"],

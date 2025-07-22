@@ -5,7 +5,7 @@ name: 'federal_reserve'
 version: '1.0.0'
 
 # This setting configures which "profile" dbt uses for this project.
-profile: 'federal_reserve'
+profile: 'default'
 
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
@@ -14,12 +14,13 @@ model-paths: ["models"]
 
 
 models:
-  clean:
-    +schema: clean
-  raw:
-    +schema: raw
-  datawarehouse:
-    +schema: datawarehouse
+  federal_reserve:
+    clean:
+      +schema: clean
+    raw:
+      +schema: raw
+    datawarehouse:
+      +schema: datawarehouse
 
 
 

@@ -1,6 +1,5 @@
 import subprocess
 import os
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
 import argparse
 
 
@@ -16,8 +15,10 @@ def main():
     args = parser.parse_args()
 
     # Moverse al directorio raíz del proyecto (finalis_etl/)
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    os.chdir(script_dir) 
+    os.chdir(os.path.dirname(os.path.abspath(__file__)))
+    
+    db_path = os.path.abspath("federal_reserve.duckdb")
+    os.environ["DUCKDB_PATH"] = db_path
 
     run("python scripts/extract_data.py")
     run(f"python scripts/load_to_duckdb.py{' --reset' if args.reset else ''}")

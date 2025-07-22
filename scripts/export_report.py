@@ -12,7 +12,7 @@ filename = f"federal_reserve_report_dataset_{timestamp}.csv"
 output_path = output_dir / filename
 
 con = duckdb.connect(db_path)
-df = con.sql("SELECT * FROM main.federal_reserve_observations ORDER BY observation_date DESC").fetchdf()
+df = con.sql("SELECT * FROM main_datawarehouse.federal_reserve_observations ORDER BY observation_date DESC").fetchdf()
 df.to_csv(output_path, index=False)
 
 print(f"[SUCCESS] Exported final report to {output_path}")
